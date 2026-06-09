@@ -1,8 +1,130 @@
+/* 
+    background-color1: #824a55;
+    background-color2: #2b2529;
+    background-color3: #695974;
+    background-color4: #926369;
+
+    color1 : #000000;
+    color2 : $ffffff;
+    color3 : #824a55;
+    color4 : #bda7ab;
+
+*/
 *{
     padding: 0;
     margin: 0;
-    background-color: black;
 }
 body {
+    background-color: black;
     color: white;
+}
+.main{
+    width: 94%;
+    height: auto;
+    margin: 1em auto;
+    padding: 1em;
+    background: #824A55;
+    background: linear-gradient(110deg, rgba(130, 74, 85, 1) 0%, rgba(43, 37, 41, 1) 70%, rgba(105, 89, 116, 1) 100%);
+    border-radius: 1em;
+
+}
+
+
+/* Header CSS */
+.header{
+    color: #bda7ab;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+
+}
+.span {
+    font-size: 2em;  
+    font-variant: small-caps;
+    text-shadow: 2px 2px 10px white;
+}
+
+.nav {
+    float: right;
+}
+ul li{
+    padding: 1em;
+    display: inline-block;
+    list-style-type: none;
+    text-align: center;
+    
+}
+ul li:hover{
+    background-color: #bda7ab;
+    border-radius: 50px;
+    color: white;
+}  
+
+ul li a{
+    padding: 0.5em;
+    font-size: 1em;
+    color: #bda7ab;
+    text-decoration: none;
+    text-shadow: 5px 5px 10px white;
+}
+ul li a:hover{
+    font-size: 1em;
+    color: white;
+    text-decoration: none;
+    background-color: #bda7ab;
+    padding: 0.5em;
+    box-sizing: border-box;
+    border-radius: 5em;
+}
+
+/* Context css  */
+
+.context {
+    border: 1px solid white;
+    display: flex;
+    justify-content: space-around;
+    padding: 5em;
+    width: 80%;
+    margin: auto;
+}
+.text {
+    color : #bda7ab;
+    text-align: right;    
+}
+h1,p,button {
+    padding: 1em;
+}
+.text a {
+    
+    background-color: #824a55;
+    padding: 10px;
+    text-decoration: none;
+    color: #bda7ab;
+    border: none;
+    border-radius: 1em;
+    box-shadow: 2px 2px 5px;
+    display: inline-block;
+    
+}
+
+.img{
+    border: 10px solid #bda7ab;
+    border-radius: 1em;
+    box-shadow: 2px 2px 10px #bda7ab;
+    
+}
+.img img{
+    width: 20em;
+    height: 40ex;
+    animation-name: user;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes user {
+    from{
+        transform: rotateY(180deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }    
 }
