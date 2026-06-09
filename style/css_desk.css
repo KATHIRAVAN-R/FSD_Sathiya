@@ -90,6 +90,9 @@ ul li a:hover{
     box-sizing: border-box;
     border-radius: 5em;
 }
+.text p{
+    text-align: right;
+}
 
 /* Context css  */
 
